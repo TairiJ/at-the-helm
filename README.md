@@ -39,8 +39,6 @@ This project is built with a "Production-First" mindset, including comprehensive
     git clone https://github.com/tairij/at-the-helm.git
     cd at-the-helm
     ```
-
-* (Must have Node.js installed)
   
 2.  **Setup the Server**:
     ```bash
@@ -49,6 +47,7 @@ This project is built with a "Production-First" mindset, including comprehensive
     cp .env.example .env # Add your API keys here
     npm run dev
     ```
+* (Must have Node.js installed)
 
 3.  **Setup the Client**:
     ```bash
