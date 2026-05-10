@@ -47,6 +47,13 @@ This project is built with a "Production-First" mindset, including comprehensive
     cp .env.example .env # Add your API keys here
     npm run dev
     ```
+    ```powershell
+    cd server
+    npm install
+    copy .env.example .env
+    npm run dev
+    ```
+    
 * (Must have Node.js installed)
 
 3.  **Setup the Client**:
