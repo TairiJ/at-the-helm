@@ -70,6 +70,7 @@ This project is built with a "Production-First" mindset, including comprehensive
     cargo build --release
     ./target/release/helm-guardian
     ```
+* (Must have rust (rustup) installed)
 
 ### Running Tests
 *   **Backend**: `cd server && npm test`
