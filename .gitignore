@@ -1,0 +1,11 @@
+node_modules/
+dist/
+target/
+data/*.db
+data/backups/
+data/uploads/
+.env
+*.log
+.DS_Store
+playwright-report/
+test-results/

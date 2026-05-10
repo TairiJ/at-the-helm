@@ -1,0 +1,47 @@
+[package]
+name = "helm-guardian"
+version = "0.1.0"
+edition = "2021"
+authors = ["At The Helm"]
+description = "Background backup daemon and mutual watchdog for the At The Helm cockpit"
+
+[[bin]]
+name = "helm-guardian"
+path = "src/main.rs"
+
+[dependencies]
+# Async runtime — constrained thread pool for minimal overhead
+tokio = { version = "1", features = ["rt-multi-thread", "macros", "time", "process", "signal", "io-std"] }
+
+# SQLite — bundled so no external .dll needed
+rusqlite = { version = "0.31", features = ["bundled"] }
+
+# ZIP archive creation — streaming, no in-memory buffering
+zip = { version = "2", default-features = false, features = ["deflate"] }
+
+# Process introspection for watchdog
+sysinfo = { version = "0.30", default-features = false }
+
+# Timestamps
+chrono = { version = "0.4", features = ["serde"] }
+
+# Structured logging (zero-alloc hot path)
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }
+
+# Serialization for config
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+
+# Filesystem utilities
+walkdir = "2"
+
+# Error handling — minimal, no panics
+anyhow = "1"
+
+[profile.release]
+opt-level = 3
+lto = true
+codegen-units = 1
+strip = true
+panic = "abort"
