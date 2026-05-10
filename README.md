@@ -40,7 +40,8 @@ This project is built with a "Production-First" mindset, including comprehensive
     cd at-the-helm
     ```
 
-(Must have Node.js installed)
+* (Must have Node.js installed)
+  
 2.  **Setup the Server**:
     ```bash
     cd server
