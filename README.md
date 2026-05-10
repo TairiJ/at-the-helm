@@ -36,7 +36,7 @@ This project is built with a "Production-First" mindset, including comprehensive
 ### Installation
 1.  **Clone the repository**:
     ```bash
-    git clone https://github.com/tairijohnson/at-the-helm.git
+    git clone https://github.com/tairij/at-the-helm.git
     cd at-the-helm
     ```
 
