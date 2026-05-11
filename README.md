@@ -26,6 +26,18 @@ This project is built with a "Production-First" mindset, including comprehensive
 
 ---
 
+## 📸 Interface Preview
+
+### Guest View (Restricted Access)
+*Anonymous users have limited access to models and cannot access the Knowledge Base or Vault.*
+![Guest View](assets/guest_view.png)
+
+### Operator View (Full Access)
+*Authenticated users unlock the full power of the cockpit, including RAG-powered Knowledge Bases, MCP Tool integration, and granular settings.*
+![Operator View](assets/user_view.png)
+
+---
+
 ## 🚀 Getting Started
 
 ### Prerequisites
