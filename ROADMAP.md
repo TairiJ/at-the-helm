@@ -18,8 +18,10 @@ This document outlines the specific technical enhancements required to transitio
 *   **Re-ranking Layer**: Integrate Cohere or BGE-Reranker to refine top-K results.
 
 ## 🚢 Milestone 2: Infrastructure & Portability
-*   **Kubernetes Transition**: Create Helm Charts for client, server, and guardian.
+*   **Dockerization**: Containerize all services (Client, Server, Guardian) into a single `docker-compose` environment for "One-Click" deployment.
+*   **Kubernetes Transition**: Create Helm Charts for scaling across cloud clusters.
 *   **Infrastructure as Code (IaC)**: Terraform scripts for EKS/GKE provisioning.
+*   **Static Bundling**: Optimize the server to serve the React frontend, reducing the system footprint from multiple servers to a single unified service.
 *   **Monitoring++**: Export Guardian metrics to Prometheus/Grafana.
 
 ## 📊 Milestone 3: AI Quality & Evaluation (Evals)
